@@ -362,7 +362,7 @@
           </li>
         </ul>
       </div>
-      <div class="footer-form">        
+      <div class="footer-form">
         <form class="form">
           <label class="footer-title">Subscribe
             <input type="email" class="form-field" name="email" autocomplete="off" placeholder="E-mail">
@@ -376,14 +376,67 @@
         </form>
       </div>
     </footer>
+
+
+    <!-- MODAL -->
     <div class="backdrop is-hidden" data-modal>
-      <div class="modal is-hidden">
-        <p></p>
+      <div class="modal is-hidden">       
         <button type="button" class="modal-close" data-modal-close>
           <svg class="modal-close-vector" width="8px" height="8px">
             <use href="./images/icons.svg#icon-vector"></use>
           </svg>
+        </button>       
+        <h2 class="modal-title">Leave your contacts and we will call you back</h2>
+        <form class="modal-form">          
+          <div class="modal-section">
+            <label class="modal-form-title">Name
+              <div class="modal-form-field">
+                <input type="text" class="modal-input" name="name" autocomplete="off">
+                <svg class="modal-icon" width="18px" height="18px"> 
+                  <use href="./images/icons.svg#icon-name"></use>
+                </svg>
+              </div>
+            </label>            
+          </div>
+          <div class="modal-section">
+            <label class="modal-form-title">Phone
+              <div class="modal-form-field">
+                <input type="tel" class="modal-input" name="phone" autocomplete="off">
+                <svg class="modal-icon" width="18px" height="24px"> 
+                  <use href="./images/icons.svg#icon-phone"></use>
+                </svg>
+              </div>
+            </label>
+          </div>
+          <div class="modal-section">
+            <label class="modal-form-title">Email
+              <div class="modal-form-field">
+                <input type="email" class="modal-input" name="email" autocomplete="off">
+                <svg class="modal-icon" width="18px" height="24px">
+                  <use href="./images/icons.svg#icon-mail"></use>
+                </svg>
+              </div>
+            </label>            
+          </div>
+          <div>
+            <label class="modal-form-title">Comment
+              <textarea class="modal-input" name="comment" rows="5" placeholder="Text input" width="360px"></textarea>
+            </label>
+          </div>
+          <div class="form-chekbox">
+            <label class="modal-chekbox-text">
+              <input type="checkbox" class="form-chekbox-icon" name="policy" value="policy">
+              I accept the terms and conditions of the              
+              <a href="#">Privacy Policy</a>
+              <svg class="chekbox-icon" width="16px" height="16px">
+                <use href="./images/icons.svg#icon-chekbox"></use>
+              </svg>
+            </label>            
+        </div>
+        <button type="button" class="modal-form-button">Send
+
         </button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
